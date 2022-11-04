@@ -139,21 +139,22 @@
 <div class="row g-3">
   <div class="col">
     <label for="">Cantidad</label>
-    <input type="text" class="form-control" placeholder="" aria-label="First name">
+    <input id="cantidad" type="text" class="form-control" placeholder="" aria-label="First name">
   </div>
   <div class="col">
     <label for="">Categoria</label>
-    <select class="form-select" aria-label="Default select example">
-      <option selected>Estudiante</option>
-      <option value="1">Trainee</option>
-      <option value="2">Junior</option>
+    <select class="form-select" id="select" aria-label="Default select example">
+      <option selected value="80">Estudiante</option>
+      <option value="50">Trainee</option>
+      <option value="15">Junior</option>
           </select>
     
   </div>
 </div>
 <div class="divdepago ">
   
-  <p class="text-start pe">Total a Pagar $</p>
+  <h2 class="text-start pe">Total a Pagar $ <span id="descuento"></span></h2> 
+  
 </div>
 <br>
 <br>
@@ -161,13 +162,13 @@
   <div class="row">
     <div class="col-6">
       <div class="d-grid gap-2">
-        <button class="btn btn-success btncolores" type="button">Borrar</button>
+        <button class="btn btn-success btncolores" onclick="borrar()" type="button">Borrar</button>
         
       </div>
     </div>
     <div class="col-6">
       <div class="d-grid gap-2">
-        <button class="btn btn-success btncolores" type="button">Resumen</button>
+        <button class="btn btn-success btncolores" onclick="btnclick()" type="button">Resumen</button>
         
       </div>
     </div>
